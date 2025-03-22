@@ -1,0 +1,496 @@
+body {
+    background-color: lightcoral;
+}
+
+
+.casset-body {
+    background-color: #262626;
+    height: 310px;
+    width: 500px;
+
+    border-radius: 20px;
+
+    position: relative;
+    left: 35%;
+    top:200px;
+}
+
+.side-bt {
+    background-color: #262626;
+    height: 100px;
+    width: 512px;
+    border-radius: 3px;
+
+    position: relative;
+    right: 6px;
+    top: 165px;
+
+    z-index: -1;
+
+    animation: side-bt 2s linear infinite;
+}
+
+@keyframes side-bt {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.01);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.bottom-disp {
+    background-color: #262626;
+    height: 110px;
+    width: 325px;
+    
+    border-radius: 25px / 150px;
+    border: 1px solid white;
+
+    position: relative;
+    top: 110px;
+    left: 85px;
+
+    offset-anchor: bottom;
+}
+
+
+.button-cir1 {
+    background-color: red;
+    height: 25px;
+    width: 25px;
+
+    border-radius: 50%;
+
+    position: absolute;
+    top: 70px;
+    left: 20px;
+}
+
+.button-cir2 {
+    background-color: red;
+    height: 25px;
+    width: 25px;
+
+    border-radius: 50%;
+
+    position: absolute;
+    top: 50px;
+    left: 65px;
+}
+
+.button-cir3 {
+    background-color: red;
+    height: 25px;
+    width: 25px;
+
+    border-radius: 50%;
+
+    position: absolute;
+    top: 70px;
+    left: 280px;
+}
+
+.button-cir4 {
+    background-color: red;
+    height: 25px;
+    width: 25px;
+
+    border-radius: 50%;
+
+    position: absolute;
+    top: 50px;
+    left: 230px;
+
+}
+
+.screen {
+    background-color: rgba(211, 211, 211, 0.855);
+    height: 165px;
+    width: 460px;
+
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.red-bar {
+    background-color: red;
+    height: 20px;
+    width: 460px;
+
+    animation: colors-bar 3s linear infinite;
+}
+
+@keyframes colors-bar {
+    0% {
+        background-color: red;
+    }
+
+    45% {
+        background-color: green;
+    }
+
+    60% {
+        background-color: blue;
+    }
+
+    100% {
+        background-color: red;
+    }
+}
+
+.white-bar {
+    background-color: white;
+    height: 40px;
+    width: 460px;
+}
+
+.black-bars {
+    background: repeating-linear-gradient(to bottom, black 0px, black 1px, transparent 8px, transparent 8px);
+    height: 90px; /* Adjust height as needed */
+    width: 460px;
+
+    opacity: 0.3;
+}
+
+.casset {
+    background-color: #262626;
+    height: 80px;
+    width: 330px;
+
+    position: absolute;
+    bottom: 10px;
+    left: 65px;
+}
+
+.circle1 {
+    background-color: rgb(255, 255, 255);
+    height: 60px;
+    width: 60px;
+
+    border-radius: 50%;
+
+    position: absolute;
+    top: 10px;
+    left: 20px;
+
+    animation: circrot 3s linear infinite;
+    transition: 0.5s ease-in-out;
+}
+
+.circle1:hover {
+    background-color: lightblue;
+}
+
+@keyframes circrot {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(125deg);
+    }
+
+    75% {
+        transform: rotate(245deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.circle1-outline {
+    height: 40px;
+    width: 40px;
+    
+    border: 5px solid black;
+    border-radius: 50%;
+
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+.ex1 {
+    position: absolute;
+    left: 1px;
+}
+
+.x1 {
+    background-color: black;
+    height: 50px;
+    width: 8px;
+
+    position: absolute;
+    top: 5px;
+    left: 25px;
+
+    transform: rotate(60deg);
+}
+
+.x2 {
+    background-color: black;
+    height: 50px;
+    width: 8px;
+
+    position: absolute;
+    top: 5px;
+    left: 25px;
+
+    transform: rotate(120deg);
+}
+
+.x3 {
+    background-color: black;
+    height: 50px;
+    width: 8px;
+
+    position: absolute;
+    top: 5px;
+    left: 25px;
+
+    transform: rotate(0deg);
+}
+
+.circle2 {
+    background-color: rgb(255, 255, 255);
+    height: 60px;
+    width: 60px;
+
+    border-radius: 50%;
+
+    position: absolute;
+    top: 10px;
+    left: 250px;
+
+    animation: circrot2 3s linear infinite;
+    transition: 0.5s ease-in-out;
+}
+
+.circle2:hover {
+    background-color: lightcoral;
+}
+
+@keyframes circrot2 {
+    0% {
+        transform: rotate(-0deg);
+    }
+
+    50% {
+        transform: rotate(-100deg);
+    }
+
+    75% {
+        transform: rotate(-260deg);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+.circle2-outline {
+    height: 40px;
+    width: 40px;
+    
+    border: 5px solid black;
+    border-radius: 50%;
+
+    position: absolute;
+    top: 5px;
+    left: 6px;
+}
+
+.ex2 {
+    position: absolute;
+    left: 1.5px;
+}
+
+.x4 {
+    background-color: black;
+    height: 50px;
+    width: 8px;
+
+    position: absolute;
+    top: 5px;
+    left: 25px;
+
+    transform: rotate(60deg);
+}
+
+.x5 {
+    background-color: black;
+    height: 50px;
+    width: 8px;
+
+    position: absolute;
+    top: 5px;
+    left: 25px;
+
+    transform: rotate(120deg);
+}
+
+.x6 {
+    background-color: black;
+    height: 50px;
+    width: 8px;
+
+    position: absolute;
+    top: 5px;
+    left: 25px;
+
+    transform: rotate(0deg);
+}
+
+.inset-circle {
+    background-color: #262626;
+    height: 35px;
+    width: 35px;
+
+    border-radius: 50%;
+
+    position: absolute;
+    top: 12.5px;
+    left: 12.5px;
+}
+
+.inset-circle2 {
+    background-color: #262626;
+    height: 35px;
+    width: 35px;
+
+    border-radius: 50%;
+
+    position: absolute;
+    top: 12.5px;
+    left: 13px;
+}
+
+.mid-box {
+    background-color: lightcoral;
+    height: 60px;
+    width: 150px;
+
+    position: absolute;
+    top: 11px;
+    left: 90px;
+
+    overflow: hidden;
+}
+
+.tape1 {
+    background-color: gray;
+    height: 70px;
+    width: 70px;
+
+    border-radius: 50%;
+    border: 15px solid black;
+
+    position: relative;
+    right: 65px;
+    bottom: 10px;
+
+    animation: tape1-rot 3s linear infinite;
+}
+
+@keyframes tape1-rot {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    75% {
+        transform: rotate(250deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.tape1-x {
+    background-color: black;
+    height: 10px;
+    width: 75px;
+
+    position: absolute;
+    top: 30px;
+    right: 0px;
+}
+
+.tape1-x2 {
+    background-color: black;
+    height: 10px;
+    width: 80px;
+
+    position: absolute;
+    top: 27px;
+    left: -5px;
+
+    transform: rotate(90deg);
+}
+
+.tape2 {
+    background-color: gray;
+    height: 70px;
+    width: 70px;
+
+    border-radius: 50%;
+    border: 15px solid black;
+
+    position: relative;
+    left: 115px;
+    bottom: 110px;
+
+    animation: tape2-rot 3s linear infinite;
+}
+
+@keyframes tape2-rot {
+    0% {
+        transform: rotate(-0deg);
+    }
+
+    50% {
+        transform: rotate(-190deg);
+    }
+
+    75% {
+        transform: rotate(-200deg);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+.tape1-x3 {
+    background-color: black;
+    height: 10px;
+    width: 75px;
+
+    position: absolute;
+    top: 30px;
+    left: 0px;
+}
+
+.tape1-x4 {
+    background-color: black;
+    height: 10px;
+    width: 80px;
+
+    position: absolute;
+    top: 27px;
+    left: -5px;
+
+    transform: rotate(90deg);
+}
